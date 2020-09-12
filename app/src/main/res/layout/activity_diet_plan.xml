@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Diet.DietPlan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <EditText
+            android:id="@+id/dietname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/naming"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/choose_enddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/catamaran_medium"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="@string/choose_enddate"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <CalendarView
+            android:id="@+id/calendar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/catamaran_medium"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="@string/dieting"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TableLayout
+            android:id="@+id/dietcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/search_veget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_vegetarian" />
+
+                <CheckBox
+                    android:id="@+id/search_vegan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_vegan" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/search_gluten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_gluten" />
+
+                <CheckBox
+                    android:id="@+id/search_keto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_keto" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/search_lactovega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_lactov" />
+
+                <CheckBox
+                    android:id="@+id/search_ovovega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_ovov" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <CheckBox
+                    android:id="@+id/search_primal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_primal" />
+
+                <CheckBox
+                    android:id="@+id/search_paleo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_paleo" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/search_pescetarian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_pesc" />
+
+                <CheckBox
+                    android:id="@+id/search_whole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_whole" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/catamaran_medium"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="@string/chooseintolerance"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_dairy"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dairy"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_egg"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Egg"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_gluten"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Gluten"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_grain"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF6FA"
+                    android:text="@string/Grain"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_peanut"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF6FA"
+                    android:text="@string/Peanut"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_sea"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF6FA"
+                    android:text="@string/Seafood"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_shell"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Shellish"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_soy"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Soy"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_tree"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF6FA"
+                    android:text="@string/Treenut"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_wheat"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF6FA"
+                    android:text="@string/Wheat"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:chipBackgroundColor="#0097A7"
+                    app:chipIconVisible="false" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dietplan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:backgroundTint="#FFD600"
+            android:paddingTop="5dp"
+            android:text="@string/plan"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/spinner"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/setupplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setupplan"
+                android:visibility="invisible" />
+        </TableRow>
+
+
+    </LinearLayout>
+</ScrollView>

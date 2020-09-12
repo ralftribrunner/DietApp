@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.Food.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <EditText
+            android:id="@+id/search_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="@string/Gnocchi"
+            android:ems="10"
+            android:hint="@string/Gnocchi"
+            android:inputType="textShortMessage|none"
+            android:maxLength="20" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/catamaran_medium"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="@string/dieting"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TableLayout
+            android:id="@+id/dietcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/search_veget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_vegetarian" />
+
+                <CheckBox
+                    android:id="@+id/search_vegan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_vegan" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <CheckBox
+                    android:id="@+id/search_keto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_keto" />
+
+                <CheckBox
+                    android:id="@+id/search_pescetarian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_pesc" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/search_lactovega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_lactov" />
+
+                <CheckBox
+                    android:id="@+id/search_ovovega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_ovov" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <CheckBox
+                    android:id="@+id/search_primal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_primal" />
+
+                <CheckBox
+                    android:id="@+id/search_paleo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search_paleo" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/catamaran_medium"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="@string/cuisines"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/countrycontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_gb"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/British"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/uk"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_fr"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/French"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/fra"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_ger"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/German"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/ger"
+                            app:chipIconVisible="true" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_chi"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chinese"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:checkedIconEnabled="true"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/china"
+                            app:chipIconSize="30dp"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_american"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/American"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/usa"
+                            app:chipIconVisible="true" />
+
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_italian"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Italian"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/ita"
+                            app:chipIconVisible="true" />
+                    </com.google.android.material.chip.ChipGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_greek"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Greek"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/greece"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_irish"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Irish"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/ireland"
+                            app:chipIconVisible="true" />
+
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_spa"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Spanish"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/spa"
+                            app:chipIconVisible="true" />
+
+                    </com.google.android.material.chip.ChipGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_jew"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Jewish"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/isr"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_thai"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Thai"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/tha"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_mex"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Mexican"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/mex"
+                            app:chipIconVisible="true" />
+
+                    </com.google.android.material.chip.ChipGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_med"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Mediterranean"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIconVisible="false" />
+
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_nord"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Nordic"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:checkedIconEnabled="true"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIconSize="30dp"
+                            app:chipIconVisible="false" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_afr"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Africa"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:checkedIconEnabled="true"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIconSize="30dp"
+                            app:chipIconVisible="false" />
+
+                    </com.google.android.material.chip.ChipGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_viet"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Vietnamese"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/vietnam"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_cajun"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Cajun"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIconVisible="false" />
+
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_carr"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Caribbean"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIconVisible="false" />
+
+
+                    </com.google.android.material.chip.ChipGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_indian"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF6FA"
+                            android:text="@string/Indian"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/india"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_kor"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Korean"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:checkedIconEnabled="true"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/south_korea"
+                            app:chipIconSize="30dp"
+                            app:chipIconVisible="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_eu"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/European"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:checkedIconEnabled="true"
+                            app:chipBackgroundColor="@color/colorFlagChip"
+                            app:chipIcon="@drawable/eu"
+                            app:chipIconSize="30dp"
+                            app:chipIconVisible="true" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/catamaran_medium"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="@string/choosetype"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/maincourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/MainCourse" />
+
+                <CheckBox
+                    android:id="@+id/dessert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Dessert" />
+
+                <CheckBox
+                    android:id="@+id/appetizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Appetizer" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/salad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Salad" />
+
+                <CheckBox
+                    android:id="@+id/breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Breakfast" />
+
+                <CheckBox
+                    android:id="@+id/soup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Soup" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/sauce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Sauce" />
+
+                <CheckBox
+                    android:id="@+id/snack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Snack" />
+
+                <CheckBox
+                    android:id="@+id/drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Drink" />
+            </TableRow>
+
+        </TableLayout>
+
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/catamaran_medium"
+            android:paddingVertical="8dp"
+            android:paddingStart="10dp"
+            android:text="@string/chooseintolerance"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_dairy"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Dairy"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_egg"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Egg"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_gluten"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Gluten"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_shell"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Shellish"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_soy"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Soy"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_tree"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF6FA"
+                        android:text="@string/Treenut"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_sea"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF6FA"
+                        android:text="@string/Seafood"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_grain"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF6FA"
+                        android:text="@string/Grain"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_peanut"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF6FA"
+                        android:text="@string/Peanut"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_wheat"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF6FA"
+                        android:text="@string/Wheat"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:chipBackgroundColor="#0097A7"
+                        app:chipIconVisible="false" />
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?android:attr/textCheckMark"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/goright"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/goright"
+                tools:visibility="invisible" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+    </LinearLayout>
+
+</ScrollView>

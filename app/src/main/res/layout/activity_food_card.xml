@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Foodcard_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_foodcard"
+    android:backgroundTintMode="add"
+    tools:context=".ui.Food.FoodCard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#89A390E4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/card_ready"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/foodcard_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/fav_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:button="@android:drawable/btn_star"
+                    android:checked="false"
+                    android:gravity="fill" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F8D98C"
+                        android:text="@string/back"
+                        tools:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/button_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="#0085CD"
+                        android:text="@string/next"
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/foodcardpic"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dietpic3" />
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:visibility="visible">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/veg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_vegetarian"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_vegan"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/glutenfree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_gluten"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/dairyfree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dairyfree"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/veryhealthy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/healthy"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cheap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheap"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/verypop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sust"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                tools:visibility="visible" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <Button
+            android:id="@+id/gotoweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/gotoweb" />
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:lineSpacingExtra="8sp"
+            android:textSize="18sp" />
+
+
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#000000" />
+    </LinearLayout>
+</ScrollView>

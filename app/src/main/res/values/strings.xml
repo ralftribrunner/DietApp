@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">DietApp</string>
+    <string name="picdiet">Diet</string>
+    <string name="picfood">Food</string>
+    <string name="diet">Diet</string>
+    <string name="title_activity_food_list">FoodList</string>
+    <string name="tab_text_1">Search</string>
+    <string name="tab_text_2">Meals</string>
+    <string name="tab_text_3">Favourites</string>
+
+    <string name="Gnocchi">Gnocchi</string>
+    <string name="SearchFood">Search a food by name</string>
+
+    <string name="dieting">Choose diets:</string>
+
+    <string name="finder">Food Finder</string>
+    <string name="enddate">End date: </string>
+    <string name="choose_enddate">Choose an end date: </string>
+
+    <string name="search_vegetarian">Vegetarian</string>
+    <string name="search_vegan">Vegan</string>
+    <string name="search_gluten">Gluten Free</string>
+    <string name="search_keto">Ketogenic</string>
+    <string name="search_lactov">Lacto-Vegetarian</string>
+    <string name="search_ovov">Ovo-Vegetarian</string>
+    <string name="search_pesc">Pescetarian</string>
+    <string name="search_paleo">Paleo</string>
+    <string name="search_primal">Primal</string>
+    <string name="search_whole">Whole30</string>
+
+    <string name="cuisines">Choose cuisines:</string>
+
+    <string name="American">American</string>
+    <string name="Africa">African</string>
+    <string name="British">British</string>
+    <string name="Chinese">Chinese</string>
+    <string name="Cajun">Cajun</string>
+    <string name="Caribbean">Caribbean</string>
+    <string name="EastEurope">Eastern European</string>
+    <string name="European">European</string>
+    <string name="French">French</string>
+    <string name="German">German</string>
+    <string name="Greek">Greek</string>
+    <string name="Indian">Indian</string>
+    <string name="Irish">Irish</string>
+    <string name="Italian">Italian</string>
+    <string name="Japanese">Japanese</string>
+    <string name="Jewish">Jewish</string>
+    <string name="Korean">Korean</string>
+    <string name="LatinAmerican">Latin American</string>
+    <string name="Mediterranean">Mediterranean</string>
+    <string name="Mexican">Mexican</string>
+    <string name="MiddleEastern">Middle Eastern</string>
+    <string name="Nordic">Nordic</string>
+    <string name="Southern">Southern</string>
+    <string name="Spanish">Spanish</string>
+    <string name="Thai">Thai</string>
+    <string name="Vietnamese">Vietnamese</string>
+
+    <string name="choosetype">Choose dish types:</string>
+
+    <string name="MainCourse">Main Course</string>
+    <string name="Dessert">Dessert</string>
+    <string name="Appetizer">Appetizer</string>
+    <string name="Salad">Salad</string>
+    <string name="Breakfast">Breakfast</string>
+    <string name="Soup">Soup</string>
+    <string name="Drink">Drink</string>
+    <string name="Sauce">Sauce</string>
+    <string name="Snack">Snack</string>
+    <string name="dinner">Dinner</string>
+
+    <string name="chooseintolerance">Choose the ingredients, which you don\'t want to have:</string>
+
+    <string name="Dairy">Dairy</string>
+    <string name="Egg">Egg</string>
+    <string name="Gluten">Gluten</string>
+    <string name="Grain">Grain</string>
+    <string name="Peanut">Peanut</string>
+    <string name="Seafood">Seafood</string>
+    <string name="Shellish">Shellish</string>
+    <string name="Soy">Soy</string>
+    <string name="Sulfite">Sulfite</string>
+    <string name="Treenut">Treenut</string>
+    <string name="Wheat">Wheat</string>
+    <string name="sesame">Sesame</string>
+
+    <string name="dairyfree">Dairy Free</string>
+    <string name="healthy">Very Healthy</string>
+    <string name="cheap">Cheap</string>
+    <string name="popular">Popular</string>
+    <string name="sust">Sustainable</string>
+
+
+    <string name="title_activity_diet_menu">DietMenu</string>
+
+    <string name="Calendar">Calendar</string>
+    <string name="Calories">Calories</string>
+
+    <string name="naming">Give a name to your diet</string>
+    <string name="plan_alert">You have to give a name</string>
+    <string name="okay">Okay</string>
+    <string name="plan">Plan</string>
+    <string name="setupplan">Setting up diet plan...</string>
+    <string name="plan_alert2">Choose a date interval</string>
+    <string name="plan_alert3">I am sorry, but I couldn\'t find any diet with the give setup</string>
+    <string name="add_diets">You don\'t have any diets right now. You can add with this + button</string>
+    <string name="remove_diets">Do you want to delete this diet?</string>
+    <string name="no">No</string>
+    <string name="back">BACK</string>
+    <string name="next">NEXT</string>
+    <string name="nonet">No internet connection!</string>
+    <string name="channel_name">Diet Notification</string>
+    <string name="channel_description">Sending notifications about expiring diets</string>
+
+    <string name="exp_diet_title">Expiring Diets</string>
+    <string name="exp_diet">One of your diets will be expired in a few days. You can renew it with a long tap on the diet.</string>
+    <string name="exp_date">Expiring date: </string>
+    <string name="gotoweb">Go to the full recipe</string>
+    <string name="goright">"Success! Swipe left! "</string>
+    <string name="date_extended">The end of diet is changed</string>
+    <string name="futur_date">You have to choose a future date</string>
+
+</resources>

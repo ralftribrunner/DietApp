@@ -1,0 +1,270 @@
+  bash arg: -p
+  bash arg: com.example.dietapp
+  bash arg: -v
+  bash arg: 1000
+args: [-p, com.example.dietapp, -v, 1000]
+ arg: "-p"
+ arg: "com.example.dietapp"
+ arg: "-v"
+ arg: "1000"
+data="com.example.dietapp"
+:Monkey: seed=1590069326787 count=1000
+:AllowPackage: com.example.dietapp
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(1330.0,448.0)
+:Sending Touch (ACTION_UP): 0:(1320.307,433.20224)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(754.0,2460.0)
+:Sending Touch (ACTION_UP): 0:(734.79095,2460.73)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(1379.0,250.0)
+:Sending Touch (ACTION_UP): 0:(1394.9275,239.01639)
+:Sending Touch (ACTION_DOWN): 0:(352.0,2028.0)
+:Sending Touch (ACTION_UP): 0:(254.31703,1972.0166)
+:Sending Touch (ACTION_DOWN): 0:(800.0,1999.0)
+:Sending Touch (ACTION_UP): 0:(874.4967,2015.0171)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+    // Allowing start of Intent { cmp=com.example.dietapp/.FoodList } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(423.0,79.0)
+    //[calendar_time:2020-05-19 21:38:22.434  system_uptime:961495205]
+    // Sending event #100
+:Sending Touch (ACTION_UP): 0:(473.24924,113.74939)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(11.0,1520.0)
+:Sending Touch (ACTION_UP): 0:(66.83032,1492.2147)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(528.0,464.0)
+:Sending Touch (ACTION_UP): 0:(486.78586,433.34915)
+:Sending Touch (ACTION_DOWN): 0:(829.0,484.0)
+:Sending Touch (ACTION_UP): 0:(823.00024,459.37387)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1210.0,2248.0)
+:Sending Touch (ACTION_UP): 0:(1282.3068,2287.789)
+    //[calendar_time:2020-05-19 21:38:22.819  system_uptime:961495590]
+    // Sending event #200
+    //[calendar_time:2020-05-19 21:38:22.820  system_uptime:961495590]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(178.0,970.0)
+:Sending Touch (ACTION_UP): 0:(263.24564,845.07904)
+:Sending Touch (ACTION_DOWN): 0:(1129.0,663.0)
+:Sending Touch (ACTION_UP): 0:(1136.2688,654.86884)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(328.0,1086.0)
+:Sending Touch (ACTION_UP): 0:(317.61612,1095.537)
+:Sending Touch (ACTION_DOWN): 0:(934.0,2289.0)
+:Sending Touch (ACTION_UP): 0:(936.4602,2289.641)
+:Sending Touch (ACTION_DOWN): 0:(748.0,784.0)
+:Sending Touch (ACTION_UP): 0:(733.1188,781.1046)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(1162.0,2414.0)
+:Sending Touch (ACTION_UP): 0:(1104.8704,2437.6504)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+    // Rejecting start of Intent { act=android.settings.NOTIFICATION_SETTINGS cmp=com.android.settings/.Settings$ConfigureNotificationSettingsActivity } in package com.androi
+d.settings
+    // Allowing start of Intent { cmp=com.example.dietapp/.ui.Food.FoodCard } in package com.example.dietapp
+    // Allowing start of Intent { cmp=com.example.dietapp/.ui.Food.FoodCard } in package com.example.dietapp
+    // Allowing start of Intent { cmp=com.example.dietapp/.ui.Food.FoodCard } in package com.example.dietapp
+    // Allowing start of Intent { cmp=com.example.dietapp/.ui.Food.FoodCard } in package com.example.dietapp
+    // Allowing start of Intent { cmp=com.example.dietapp/.ui.Food.FoodCard } in package com.example.dietapp
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+    // Allowing start of Intent { cmp=com.example.dietapp/.ui.Food.FoodCard } in package com.example.dietapp
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+    //[calendar_time:2020-05-19 21:38:23.002  system_uptime:961495772]
+    // Sending event #300
+:Sending Touch (ACTION_DOWN): 0:(1055.0,2256.0)
+:Sending Touch (ACTION_UP): 0:(1056.3691,2239.5056)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(988.0,2355.0)
+:Sending Touch (ACTION_UP): 0:(989.8217,2338.8694)
+:Sending Touch (ACTION_DOWN): 0:(732.0,1168.0)
+:Sending Touch (ACTION_UP): 0:(688.59143,1214.2274)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(621.0,1505.0)
+    //[calendar_time:2020-05-19 21:38:23.146  system_uptime:961495917]
+    // Sending event #400
+:Sending Touch (ACTION_UP): 0:(723.9516,1412.4834)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(122.0,2258.0)
+:Sending Touch (ACTION_UP): 0:(81.72024,2288.7424)
+:Sending Touch (ACTION_DOWN): 0:(30.0,1749.0)
+:Sending Touch (ACTION_UP): 0:(48.822216,1758.4882)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(1305.0,1344.0)
+:Sending Touch (ACTION_UP): 0:(1300.8813,1352.8729)
+:Sending Touch (ACTION_DOWN): 0:(1174.0,2295.0)
+:Sending Touch (ACTION_UP): 0:(1184.1276,2293.513)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS cmp=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity } in package
+com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(842.0,963.0)
+:Sending Touch (ACTION_UP): 0:(838.1521,960.9626)
+:Sending Touch (ACTION_DOWN): 0:(973.0,1970.0)
+:Sending Touch (ACTION_UP): 0:(982.23944,1972.5896)
+:Sending Touch (ACTION_DOWN): 0:(829.0,855.0)
+:Sending Touch (ACTION_UP): 0:(864.022,852.4443)
+:Sending Touch (ACTION_DOWN): 0:(813.0,2433.0)
+:Sending Touch (ACTION_UP): 0:(826.7993,2428.4722)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1072.0,262.0)
+:Sending Touch (ACTION_UP): 0:(1050.968,286.07837)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+    //[calendar_time:2020-05-19 21:38:23.337  system_uptime:961496108]
+    // Sending event #500
+:Sending Touch (ACTION_DOWN): 0:(563.0,457.0)
+:Sending Touch (ACTION_UP): 0:(572.25885,445.52197)
+:Sending Touch (ACTION_DOWN): 0:(1090.0,1749.0)
+:Sending Touch (ACTION_UP): 0:(1107.5459,1756.8256)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(868.0,1603.0)
+:Sending Touch (ACTION_UP): 0:(871.8213,1610.4609)
+:Sending Touch (ACTION_DOWN): 0:(1351.0,2086.0)
+:Sending Touch (ACTION_UP): 0:(1358.002,2072.4136)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(1372.0,424.0)
+:Sending Touch (ACTION_UP): 0:(1378.0092,474.72943)
+:Sending Touch (ACTION_DOWN): 0:(1234.0,576.0)
+:Sending Touch (ACTION_UP): 0:(1238.5786,575.8527)
+:Sending Touch (ACTION_DOWN): 0:(737.0,541.0)
+:Sending Touch (ACTION_UP): 0:(765.6542,636.74023)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+    //[calendar_time:2020-05-19 21:38:23.418  system_uptime:961496188]
+    // Sending event #600
+:Sending Touch (ACTION_DOWN): 0:(451.0,615.0)
+:Sending Touch (ACTION_UP): 0:(447.2969,611.6095)
+:Sending Touch (ACTION_DOWN): 0:(1135.0,1961.0)
+:Sending Touch (ACTION_UP): 0:(1117.9482,1966.8723)
+:Sending Touch (ACTION_DOWN): 0:(155.0,156.0)
+:Sending Touch (ACTION_UP): 0:(222.26161,117.357605)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity } in pack
+age com.google.android.apps.nexuslauncher
+:Sending Touch (ACTION_DOWN): 0:(868.0,366.0)
+:Sending Touch (ACTION_UP): 0:(855.8587,418.21835)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(169.0,2203.0)
+:Sending Touch (ACTION_UP): 0:(74.43521,2114.3882)
+:Sending Touch (ACTION_DOWN): 0:(957.0,321.0)
+:Sending Touch (ACTION_UP): 0:(979.09326,276.43195)
+:Sending Touch (ACTION_DOWN): 0:(891.0,708.0)
+:Sending Touch (ACTION_UP): 0:(894.5569,625.6489)
+:Sending Touch (ACTION_DOWN): 0:(884.0,205.0)
+:Sending Touch (ACTION_UP): 0:(879.6043,214.73544)
+:Sending Touch (ACTION_DOWN): 0:(814.0,1260.0)
+:Sending Touch (ACTION_UP): 0:(817.7863,1254.931)
+    //[calendar_time:2020-05-19 21:38:23.556  system_uptime:961496326]
+    // Sending event #700
+    //[calendar_time:2020-05-19 21:38:23.556  system_uptime:961496327]
+    // Sending event #700
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(739.0,1471.0)
+:Sending Touch (ACTION_UP): 0:(731.932,1463.1284)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(252.0,2068.0)
+:Sending Touch (ACTION_UP): 0:(251.33113,2068.2126)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(977.0,2565.0)
+:Sending Touch (ACTION_UP): 0:(957.0106,2581.3481)
+:Sending Touch (ACTION_DOWN): 0:(249.0,355.0)
+:Sending Touch (ACTION_UP): 0:(105.17981,368.2667)
+:Sending Touch (ACTION_DOWN): 0:(1046.0,2074.0)
+:Sending Touch (ACTION_UP): 0:(1040.4446,2068.1184)
+:Sending Touch (ACTION_DOWN): 0:(1265.0,715.0)
+:Sending Touch (ACTION_UP): 0:(1261.6967,712.9986)
+    //[calendar_time:2020-05-19 21:38:23.892  system_uptime:961496662]
+    // Sending event #800
+    //[calendar_time:2020-05-19 21:38:23.892  system_uptime:961496663]
+    // Sending event #800
+:Sending Touch (ACTION_DOWN): 0:(375.0,387.0)
+:Sending Touch (ACTION_UP): 0:(356.17474,420.89597)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+    // Allowing start of Intent { cmp=com.example.dietapp/.Diet.DietMenu } in package com.example.dietapp
+:Sending Touch (ACTION_DOWN): 0:(581.0,432.0)
+:Sending Touch (ACTION_UP): 0:(504.2373,435.66653)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(785.0,539.0)
+:Sending Touch (ACTION_UP): 0:(659.28455,539.1828)
+:Sending Touch (ACTION_DOWN): 0:(278.0,768.0)
+:Sending Touch (ACTION_UP): 0:(275.68668,770.7918)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(187.0,648.0)
+:Sending Touch (ACTION_UP): 0:(196.75539,656.46375)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
+    //[calendar_time:2020-05-19 21:38:24.103  system_uptime:961496874]
+    // Sending event #900
+:Sending Touch (ACTION_DOWN): 0:(247.0,1609.0)
+    // Allowing start of Intent { cmp=com.example.dietapp/.Diet.DietPlan } in package com.example.dietapp
+:Sending Touch (ACTION_UP): 0:(169.5326,1642.2671)
+:Sending Touch (ACTION_DOWN): 0:(19.0,1537.0)
+:Sending Touch (ACTION_UP): 0:(14.177955,1524.2745)
+:Sending Touch (ACTION_DOWN): 0:(427.0,651.0)
+:Sending Touch (ACTION_UP): 0:(431.2234,643.275)
+:Sending Touch (ACTION_DOWN): 0:(603.0,2133.0)
+:Sending Touch (ACTION_UP): 0:(621.4569,2130.3252)
+:Sending Touch (ACTION_DOWN): 0:(861.0,1785.0)
+:Sending Touch (ACTION_UP): 0:(982.3391,1882.3646)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.dietapp/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.dietapp/.MainActivity } in package com.example.dietapp
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(154.0,1311.0)
+:Sending Touch (ACTION_UP): 0:(176.92886,1293.8481)
+    // Allowing start of Intent { cmp=com.example.dietapp/.Diet.DietMenu } in package com.example.dietapp
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(1192.0,982.0)
+:Sending Touch (ACTION_UP): 0:(1244.6514,994.1678)
+:Sending Touch (ACTION_DOWN): 0:(1192.0,2312.0)
+:Sending Touch (ACTION_UP): 0:(1212.9445,2267.3164)
+:Sending Touch (ACTION_DOWN): 0:(28.0,1621.0)
+:Sending Touch (ACTION_UP): 0:(24.035124,1602.1757)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity } in pack
+age com.google.android.apps.nexuslauncher
+Events injected: 1000
+:Sending rotation degree=0, persist=false
+:Dropped: keys=1 pointers=0 trackballs=0 flips=2 rotations=0
+## Network stats: elapsed time=2446ms (0ms mobile, 0ms wifi, 2446ms not connected)
+// Monkey finished
