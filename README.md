@@ -1,6 +1,10 @@
 # DietApp
 
-
+- android app
+- search recipes
+- many searching options (diet, cuisine, dish type, food intolerance)
+- favourite food option
+- diet plan
 
 |<img src="https://user-images.githubusercontent.com/38982634/93015672-793dbc80-f5bb-11ea-902e-2487ce52bdfc.jpg" width="300">
 <img src="https://user-images.githubusercontent.com/38982634/93015674-7a6ee980-f5bb-11ea-82cb-4215bed20bf3.jpg" width="300">
